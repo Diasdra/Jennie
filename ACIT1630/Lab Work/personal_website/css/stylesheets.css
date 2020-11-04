@@ -1,0 +1,43 @@
+body {
+    background-color: beige;
+}
+nav{
+   text-align: center; 
+   background-color: lightblue;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+}
+
+.courses{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.classes{
+    grid-column: 1;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.description{
+    grid-column: 2;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+
+.index {
+    font-family:'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li{
+        display: block;
+    }
+}
